@@ -95,8 +95,8 @@ export default class HomeComponent extends React.PureComponent {
                 : null
             }
             <View style={styles.row}>
-              <Text style={styles.text2}>{Literals.LISTS}</Text>
-              <Text style={[styles.text2, styles.text3]}>{list.length} </Text>
+              <Text style={styles.listTitle}>{Literals.LISTS}</Text>
+              <Text style={[styles.listTitle, styles.listNum]}>{list.length} </Text>
             </View>
             {
               list.length > 0
@@ -150,8 +150,8 @@ export default class HomeComponent extends React.PureComponent {
                 : null
             }
             <View style={styles.row}>
-              <Text style={styles.text2}>{Literals.DEALS} </Text>
-              <Text style={[styles.text2, styles.text3]}>{deals.length} </Text>
+              <Text style={styles.listTitle}>{Literals.DEALS} </Text>
+              <Text style={[styles.listTitle, styles.listNum]}>{deals.length} </Text>
             </View>
             <FlatList
               style={{ padding: 8 }}

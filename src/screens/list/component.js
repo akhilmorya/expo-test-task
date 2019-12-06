@@ -88,7 +88,7 @@ export default class ListComponent extends React.PureComponent {
                         rowID={index}
                         close={this.state.activeRow !== index}
                         backgroundColor='rgba(0, 0, 0, 1, 0.8)'
-                        onOpen={( rowId, direction ) => {
+                        onOpen={( secId, rowId, direction ) => {
                           if (typeof direction !== "undefined" && this.state) {
                             this.setState({ activeRow: rowId });
                             if (this.state.previousTimeOut != null)
